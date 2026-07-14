@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>जय माँ बगलामुखी</title>
+
+<link rel="stylesheet" href="css/all.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(
+    135deg,
+    #fff8f5,
+    #f9d8d8,
+    #c62828,
+    #8b0000,
+    #4a0000);
+    color:#4e342e;
+    overflow-x:hidden;
+    position:relative;
+    min-width:320px;
+}
+img{
+    max-width:100%;
+    display:block;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style:none;
+}
+
+.container{
+    width:100%;
+    max-width:1300px;
+    margin:auto;
+    padding:0 20px;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:-200px;
+    left:-200px;
+    width:500px;
+    height:500px;
+    background:
+    radial-gradient(circle,
+    rgba(255,193,7,.18),
+    transparent 70%);
+    z-index:-2;
+    animation:moveGlow 10s linear infinite;
+    pointer-events:none;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    bottom:-250px;
+    right:-200px;
+    width:550px;
+    height:550px;
+    background:
+    radial-gradient(circle,
+    rgba(255,152,0,.15),
+    transparent 70%);
+    animation:moveGlow2 12s linear infinite;
+    z-index:-2;
+    pointer-events:none;
+}
+
+@keyframes moveGlow{
+0%{
+transform:translate(0,0);
+}
+50%{
+transform:translate(80px,60px);
+}
+100%{
+transform:translate(0,0);
+}
+}
+
+@keyframes moveGlow2{
+0%{
+transform:translate(0,0);
+}
+50%{
+transform:translate(-60px,-50px);
+}
+100%{
+transform:translate(0,0);
+}
+}
+
+
+.row1{
+background:linear-gradient(
+90deg,
+#8B0000,
+#C62828,
+#B71C1C);
+padding:12px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:10px;
+font-size:14px;
+color:white;
+}
+
+.row1 a{
+color:white;
+display:inline-flex;
+align-items:center;
+gap:6px;
+margin-right:18px;
+transition:.3s;
+}
+
+.row1 a:hover{
+color:#FFD700;
+}
+
+.navbar{
+position:sticky;
+top:0;
+z-index:9999;
+padding:18px 4%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(139,0,0,.92);
+backdrop-filter:blur(15px);
+box-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:34px;
+font-weight:bold;
+color:#FFD700;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.nav-links li a{
+color:white;
+font-size:16px;
+font-weight:600;
+transition:.3s;
+letter-spacing:.3px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active{
+color:#FFD700;
+}
+
+.menu-icon{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+
+.carousel{
+position:relative;
+width:100%;
+height:450px;
+overflow:hidden;
+}
+
+.slides{
+display:flex;
+width:100%;
+height:100%;
+}
+
+.slide{
+min-width:100%;
+height:100%;
+position:relative;
+}
+
+.slide img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.carousel::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(
+rgba(0,0,0,.30),
+rgba(0,0,0,.45)
+);
+pointer-events:none;
+}
+
+.carousel-caption{
+position:absolute;
+left:50%;
+bottom:70px;
+transform:translateX(-50%);
+z-index:5;
+text-align:center;
+width:100%;
+padding:0 20px;
+}
+
+.scroll-text{
+width:100%;
+overflow:hidden;
+background:linear-gradient(
+90deg,
+#8B0000,
+#C62828
+);
+color:white;
+white-space:nowrap;
+font-size:18px;
+padding:14px;
+}
+
+.scroll-text p{
+display:inline-block;
+animation: scrollText 12s linear infinite;
+font-weight:600;
+}
+
+@keyframes scrollText{
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+
+@keyframes bounce {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
+}
+
+.whatsapp, .call-btn{
+position:fixed;
+bottom:25px;
+padding:16px;
+border-radius:50%;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+animation: bounce 1.5s infinite;
+color:white;
+text-align:center;
+}
+
+.whatsapp{
+right:25px;
+background: linear-gradient(135deg, #25d366, #128c7e);
+font-size:22px;
+}
+
+.call-btn{
+left:25px;
+background: linear-gradient(135deg, #ffd54f, #ffca28);
+color:#4e342e;
+font-size:20px;
+}
+
+
+@media(max-width:1024px){
+
+.logo{
+font-size:26px;
+}
+
+.nav-links{
+gap:12px;
+}
+
+.nav-links li a{
+font-size:15px;
+}
+
+.carousel{
+height:380px;
+}
+}
+
+@media(max-width:768px){
+.row1{
+justify-content:center;
+text-align:center;
+}
+
+.menu-icon{
+display:block;
+}
+
+.nav-links{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:#FFECC8;
+flex-direction:column;
+padding:15px 0;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.nav-links li{
+width:100%;
+text-align:center;
+}
+
+.nav-links li a{
+display:block;
+padding:14px;
+font-size:15px;
+color:#8B0000;
+}
+
+.carousel{
+height:260px;
+}
+}
+
+@media(max-width:480px){
+.logo{
+font-size:22px;
+}
+
+.carousel{
+height:220px;
+}
+
+.row1{
+font-size:12px;
+}
+}
+
+
+.about-section{
+    position:relative;
+    padding:90px 0;
+    overflow:hidden;
+    background:linear-gradient(
+    135deg,
+    #fff5f5,
+    #f7d0d0,
+    #c62828,
+    #8b0000);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+}
+
+.about-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(3px);
+    z-index:0;
+}
+
+.about-section .container{
+    position:relative;
+    z-index:2;
+}
+
+@keyframes bgMove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
+.about-heading{
+text-align:center;
+margin-bottom:60px;
+opacity:0;
+transform:translateY(-60px);
+transition:1s;
+}
+
+.about-heading h4{
+color:#A62C06;
+font-size:22px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.about-heading h2{
+font-size:42px;
+font-weight:700;
+color:#A62C06;
+}
+
+.about-line{
+width:110px;
+height:5px;
+margin:18px auto;
+border-radius:50px;
+background:linear-gradient(
+90deg,
+#FFD700,
+#ffffff);
+
+}
+
+.about-wrapper{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:50px;
+flex-wrap:nowrap;
+}
+
+.about-image{
+flex:0 0 40%;
+display:flex;
+justify-content:center;
+position:relative;
+opacity:0;
+transform:translateX(-80px);
+transition:1s;
+}
+
+.about-image img{
+width:100%;
+max-width:420px;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.30);
+transition:.5s;
+}
+.about-image img:hover{
+transform:scale(1.05) rotate(-2deg);
+}
+
+.floating-box{
+position:absolute;
+width:65px;
+height:65px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:18px;
+background:linear-gradient(
+135deg,
+#ffca28,
+#ff9800);
+color:#fff;
+font-size:28px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+animation:bounceBox 3s infinite;
+}
+
+.box1{
+top:30px;
+left:10px;
+}
+
+.box2{
+bottom:40px;
+right:20px;
+}
+
+@keyframes bounceBox{
+
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-15px);
+}
+}
+
+
+.about-content{
+flex:0 0 55%;
+opacity:0;
+transform:translateX(80px);
+transition:1s;
+}
+
+.about-content h2{
+font-size:40px;
+color:#b71c1c;
+margin-bottom:20px;
+}
+
+.about-content p{
+font-size:17px;
+line-height:1.9;
+margin-bottom:18px;
+color:#5d4037;
+}
+
+.about-buttons{
+display:flex;
+gap:18px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.about-btn{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:14px 28px;
+border-radius:50px;
+font-weight:700;
+transition:.4s;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(255,152,0,.30);
+}
+
+.btn1{
+background:linear-gradient(
+90deg,
+#ffca28,
+#ff9800);
+color:#4e342e;
+}
+
+.btn2{
+background:linear-gradient(
+90deg,
+#25d366,
+#128c7e);
+color:#fff;
+}
+
+.about-btn:hover{
+transform:translateY(-5px) scale(1.05);
+}
+
+.about-show{
+opacity:1 !important;
+transform:translateX(0) translateY(0) !important;
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes leftSlide{
+from{
+opacity:0;
+transform:translateX(-80px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes rightSlide{
+from{
+opacity:0;
+transform:translateX(80px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+
+@media(max-width:1024px){
+
+.about-wrapper{
+gap:30px;
+}
+
+.about-content h2{
+font-size:32px;
+}
+
+.about-content p{
+font-size:15px;
+}
+
+.about-image img{
+max-width:360px;
+}
+}
+
+
+@media(max-width:768px){
+
+.about-section{
+padding:70px 0;
+}
+
+.about-wrapper{
+flex-direction:column;
+text-align:center;
+}
+
+.about-image,
+.about-content{
+width:100%;
+flex:1 1 100%;
+}
+
+.about-image{
+margin-bottom:25px;
+}
+
+.about-image img{
+max-width:300px;
+}
+
+.about-heading h2{
+font-size:30px;
+}
+
+.about-heading h4{
+font-size:18px;
+}
+
+.about-content h2{
+font-size:28px;
+}
+
+.about-content p{
+font-size:15px;
+line-height:1.8;
+}
+
+.about-buttons{
+justify-content:center;
+}
+
+.floating-box{
+width:55px;
+height:55px;
+font-size:22px;
+}
+}
+
+
+
+@media(max-width:480px){
+.about-image img{
+max-width:250px;
+}
+
+.about-btn{
+width:220px;
+justify-content:center;
+}
+
+.about-heading h2{
+font-size:26px;
+}
+.about-content h2{
+font-size:24px;
+}
+}
+
+
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:1000px;
+margin:50px auto;
+}
+
+.card{
+position:relative;
+background:linear-gradient(
+160deg,
+#7b0000,
+#a31515,
+#c62828
+);
+border:2px solid #FFD700;
+
+padding:18px;
+min-width:0;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+opacity:0;
+transform: translateY(50px);
+}
+
+.card.show{
+opacity:1;
+transform: translateY(0);
+transition: all 0.8s ease-out;
+}
+
+.card-img {
+  width: 150px;      
+  height: 120px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+.card h3{
+font-size:22px;
+color:white;
+}
+
+.card p{
+font-size:18px;
+margin-bottom:15px;
+color:white;
+}
+
+
+@media (max-width:1024px){
+
+.cards{
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.card h3{
+font-size:16px;
+}
+
+.card p{
+font-size:16px;
+}
+
+.card-img{
+width:100px;
+border:4px solid #FFD700;
+height:100px;
+}
+
+
+
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+}
+
+.card-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:auto;
+    flex-wrap:nowrap;
+}
+
+.custom-btn{
+    padding:12px 28px;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+.card .custom-btn{
+    display:inline-block;
+    padding:10px 36px;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+
+
+.custom-btn{
+display:inline-block;
+padding:12px 28px;
+border-radius:50px;
+background:linear-gradient(90deg,#FFD700,#FFB300);
+color:#5C0000;
+font-weight:bold;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.custom-btn:hover{
+background:linear-gradient(90deg,#8B0000,#C62828);
+color:white;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.custom-btn{
+    display:inline-block;
+    margin:5px;
+}
+
+@media(max-width:768px){
+.cards{
+grid-template-columns:1fr;
+}
+.about{
+flex-direction:column;
+text-align:center;
+}
+}
+
+.section{
+background: linear-gradient(135deg,#fff8dc,#ffe29f,#fff3c4);
+padding:60px 0;
+}
+
+.container{
+max-width:1100px;
+background: linear-gradient(135deg, #fffdf5, #fff1c1, #ffe29f, #fff8dc);
+margin:auto;
+padding:0 20px;
+}
+
+
+
+.premium-footer{
+    background:linear-gradient(135deg,#4a0000,#8B0000,#B71C1C);
+    padding:50px 5% 20px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.footer-box h3{
+    color:#FFD700;
+    margin-bottom:20px;
+    font-size:24px;
+    position:relative;
+}
+
+.footer-box h3::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:60px;
+    height:3px;
+    background:#FFD700;
+}
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:12px;
+}
+
+.footer-links li a{
+    color:white;
+    transition:.3s;
+}
+
+.footer-links li a:hover{
+    color:#FFD700;
+    padding-left:6px;
+}
+
+.footer-contact p{
+    color:white;
+    margin-bottom:12px;
+}
+
+.footer-social{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.footer-social a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    color:#FFD700;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:#FFD700;
+    transform:translateY(-5px);
+}
+
+.qr-box{
+    text-align:center;
+}
+
+.qr-box img{
+    width:160px;
+    margin:auto;
+    border-radius:12px;
+}
+
+.qr-box p{
+    color:white;
+    margin-top:10px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.25);
+    margin-top:40px;
+    padding-top:20px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:white;
+    font-size:15px;
+
+}
+
+
+@media(max-width:992px){
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+.footer-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.footer-box h3::after{
+left:50%;
+transform:translateX(-50%);
+}
+
+.footer-links li a,
+.footer-contact p{
+justify-content:center;
+}
+
+.footer-social{
+justify-content:center;
+}
+
+.qr-box img{
+width:150px;
+}
+}
+
+.slides{
+display:flex;
+width:100%;
+height:100%;
+}
+
+.slide{
+flex:0 0 100%;
+position:relative;
+}
+
+.carousel-caption{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:10;
+text-align:center;
+width:100%;
+}
+
+
+.banner-buttons{
+margin-top:150px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.banner-btn{
+position:relative;
+overflow:hidden;
+padding:16px 38px;
+border-radius:50px;
+font-size:18px;
+font-weight:700;
+letter-spacing:.5px;
+text-decoration:none;
+transition:.45s;
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+}
+
+.banner-btn::before{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:rgba(255,255,255,.4);
+transform:skewX(-25deg);
+transition:.8s;
+}
+
+.banner-btn:hover::before{
+left:140%;
+}
+
+.book-btn{
+background:linear-gradient(135deg,#ff9800,#ff5722);
+color:#fff;
+border:2px solid transparent;
+}
+
+.book-btn:hover{
+transform:translateY(-8px) scale(1.06);
+box-shadow:0 18px 40px rgba(255,87,34,.45);
+}
+
+.read-btn{
+background:rgba(255,255,255,.15);
+border:2px solid rgba(255,255,255,.8);
+color:#fff;
+}
+
+.read-btn:hover{
+background:#fff;
+color:#ff9800;
+transform:translateY(-8px) scale(1.06);
+box-shadow:0 18px 40px rgba(255,255,255,.35);
+}
+
+.banner-btn i{
+margin-right:8px;
+font-size:18px;
+}
+
+@media(max-width:768px){
+
+.banner-buttons{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.banner-btn{
+width:240px;
+text-align:center;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="row1">
+<div>
+<a href="tel:+919000000000">
+<i class="fa-solid fa-phone"></i> +91 9000000000
+</a>
+</div>
+
+<div>
+<a href="#">
+<i class="fa-solid fa-envelope"></i> poonam13prajapat@gmail.com
+</a>
+<a href="#">
+<i class="fa-brands fa-instagram"></i> @prajapat_ji
+</a>
+</div>
+</div>
+
+<nav class="navbar">
+<div class="logo">
+<i class="fa-solid fa-om"></i> Baglamukhi
+</div>
+
+<ul class="nav-links" id="menu">
+<li><a href="home.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+<li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+<li><a href="anushthan.html"><i class="fa-solid fa-hands-praying"></i> Services</a></li>
+<li><a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+<li><a href="booking.php"><i class="fa-solid fa-envelope"></i> Booking</a></li>
+<li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+</ul>
+
+<div class="menu-icon" onclick="toggleMenu()">
+<i class="fa fa-bars"></i>
+</div>
+</nav>
+
+
+<div class="carousel">
+<div class="slides" id="slides">
+<div class="slide"><img src="images/b9.png" alt="">
+<div class="carousel-caption">
+<div class="banner-buttons">
+<a href="booking.php" class="banner-btn book-btn">
+<i class="fa-solid fa-calendar-check"></i>
+Book Now
+</a>
+
+<a href="about.html" class="banner-btn read-btn">
+<i class="fa-solid fa-circle-info"></i>
+Read More
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="slide"><img src="images/b2.jpg" alt="">
+<div class="carousel-caption">
+<div class="banner-buttons">
+<a href="booking.html" class="banner-btn book-btn">
+<i class="fa-solid fa-calendar-check"></i>
+Book Now
+</a>
+
+<a href="about.html" class="banner-btn read-btn">
+<i class="fa-solid fa-circle-info"></i>
+Read More
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="slide"><img src="images/b6.jpg" alt="">
+
+<div class="carousel-caption">
+<div class="banner-buttons">
+<a href="booking.html" class="banner-btn book-btn">
+<i class="fa-solid fa-calendar-check"></i>
+Book Now
+</a>
+
+<a href="about.html" class="banner-btn read-btn">
+<i class="fa-solid fa-circle-info"></i>
+Read More
+</a>
+
+</div>
+</div></div>
+	 
+</div>
+</div>
+
+
+
+<div class="scroll-text">
+  <p>पंडितजी की पवित्र पूजा और माँ बगलामुखी की कृपा से हर संकट समाप्त हो, जीवन में आनंद, प्रेम और समृद्धि का प्रवेश हो</p>
+</div>
+
+<a href="tel:+919000000000" class="call-btn" onclick="showCallNumber()">
+  <i class="fa-solid fa-phone"></i>
+</a>
+
+<a href="tel:+919000000000" class="whatsapp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<section class="about-section">
+
+<div class="container">
+
+<div class="about-heading">
+<h4>✨ Maa Baglamukhi Divine Temple ✨</h4>
+
+<h2>About Us</h2>
+<div class="about-line"></div>
+</div>
+
+<div class="about-wrapper">
+
+<div class="about-image">
+
+<img src="images/b4.jpg" alt="Baglamukhi Maa">
+
+<div class="floating-box box1">
+<i class="fa-solid fa-om"></i>
+</div>
+
+<div class="floating-box box2">
+<i class="fa-solid fa-hands-praying"></i>
+</div>
+
+</div>
+
+<div class="about-content">
+
+<h2>जय माँ बगलामुखी 🙏</h2>
+
+<p>
+माँ बगलामुखी शक्ति, विजय और सुरक्षा की देवी मानी जाती हैं।
+उनकी कृपा से जीवन की बाधाएँ समाप्त होती हैं और सफलता का मार्ग खुलता है।
+</p>
+
+<p>
+हम यहाँ विभिन्न धार्मिक सेवाएँ जैसे पूजा, हवन, अनुष्ठान और साधना कराते हैं
+जिससे जीवन में शांति, समृद्धि और सकारात्मक ऊर्जा आती है।
+</p>
+
+<p>
+हमारा उद्देश्य है कि हर भक्त को सही मार्गदर्शन और सच्ची भक्ति का अनुभव मिले।
+यहाँ की हर सेवा पूरी श्रद्धा और विधि-विधान के साथ की जाती है।
+</p>
+
+<div class="about-buttons">
+
+<a href="tel:+919000000000" class="about-btn btn1" onclick="showCallNumber()">
+<i class="fa-solid fa-phone"></i>
+Call Now
+</a>
+
+<a href="https://wa.me/919000000000" 
+target="_blank"
+class="about-btn btn2">
+
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+
+</a>
+
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section">
+<div class="container">
+<h2 style="text-align:center; color:#b71c1c; margin:25px; font-size:35px;">Anushthan And Nivaran</h2>
+<div style="width:250px;height:4px;background:orange;margin:10px auto 30px;border-radius:5px;"></div>
+
+<div class="cards">
+
+  <div class="card">
+    <div class="card-img"><img src="images/h1.jpeg" alt="Langer Seva"></div>
+    <h3>Baglamukhi Hawan</h3>
+    <p>बगलामुखी हवन</p>
+	<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/h2.jpeg" alt="Vishesh Hawan"></div>
+    <h3>Baglamukhi Vishesh Hawan</h3>
+    <p>बगलामुखी विशेष हवन</p>
+	<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+<div class="card">
+    <div class="card-img"><img src="images/h4.jpeg" alt="Langer Seva"></div>
+    <h3>Baglamukhi MahaVishesh Hawan</h3>
+<p> बगलामुखी महाविशेष हवन</p>
+<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/b3.jpg" alt="Vishesh Hawan"></div>
+     <h3>Baglamukhi 36000 Jaap</h3>
+<p>बगलामुखी 36000 जाप</p>
+<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-img"><img src="images/j1.jpeg" alt="Langer Seva"></div>
+    <h3>Baglamukhi 1.25 Lakh Jaap</h3>
+	<p>बगलामुखी 1.25 लाख जाप</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/b6.jpg" alt="Vishesh Hawan"></div>
+    <h3>Baglamukhi 36000 Jaap</h3>
+<p>बगलामुखी 36 लाख जाप</p>
+<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-img"><img src="images/hm.jpeg" alt="Langer Seva"></div>
+   <h3>Baglamukhi Mirchi Hawan</h3>
+  <p>बगलामुखी मिर्ची हवन</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/m.jpg" alt="Vishesh Hawan"></div>
+    <h3>Baglamukhi Mirchi Vishesh Hawan</h3>
+    <p>बगलामुखी मिर्ची विशेष हवन</p>
+	<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-img"><img src="images/hm1.jpeg" alt="Langer Seva"></div>
+    <h3>Baglamukhi MahaVishesh Mirchi Hawan</h3>
+  <p>बगलामुखी महाविशेष मिर्ची हवन</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/s.jpg" alt="Vishesh Hawan"></div>
+    <h3>Sarv karya siddhi</h3>
+  <p>सर्व कार्य सिद्धी</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-img"><img src="images/t.jpeg" alt="Langer Seva"></div>
+    <h3>Tantra Badha nivaran</h3>
+  <p>तंत्र बाधा निवारण</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/st.jpeg" alt="Vishesh Hawan"></div>
+   <h3>Shatru Badha nivaran</h3>
+<p> शत्रु बाधा निवारण</p>
+<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-img"><img src="images/c.jpeg" alt="Langer Seva"></div>
+     <h3>Kort case vijay prapti</h3>
+  <p>कोर्ट केस विजय प्राप्ति</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/l.jpeg" alt="Vishesh Hawan"></div>
+    <h3>Laxmi prapti</h3>
+  <p>लक्ष्मी प्राप्ति</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-img"><img src="images/n.jpg" alt="Langer Seva"></div>
+    <h3>Najar Dosh</h3>
+  <p>नजर दोष</p>
+  <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><img src="images/k.jpg" alt="Vishesh Hawan"></div>
+     <h3>Karj Mukti</h3>
+  <p>कर्ज मुक्ति</p>
+ <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+   <div class="card">
+    <div class="card-img"><img src="images/b9.png" alt="Vishesh Hawan"></div>
+     <h3>Baglamukhi Abhishek</h3>
+  <p>बगलामुखी अभिषेक</p>
+<div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-img"><img src="images/by.jpeg" alt="Vishesh Hawan"></div>
+     <h3>Baglamukhi Shastrarchan</h3>
+  <p>बगलामुखी शास्त्रार्चन</p>
+ <div class="card-buttons">
+    <button class="custom-btn" href="anushthan.html">
+        Read More
+    </button>
+
+    <a href="booking.php" class="custom-btn">
+        Book Now
+    </a>
+</div>
+  </div>
+</div>
+</div>
+</section>
+<footer class="premium-footer">
+
+<div class="footer-container">
+
+    <div class="footer-box">
+        <h3>Quick Links</h3>
+
+        <ul class="footer-links">
+            <li><a href="home.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="anushthan.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Gallery</a></li>
+            <li><a href="booking.php"><i class="fa-solid fa-angle-right"></i> Booking</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-box">
+        <h3>Our Services</h3>
+
+        <ul class="footer-links">
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Baglamukhi Hawan</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Mirchi Hawan</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Shatru Badha Nivaran</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Court Case Vijay</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Laxmi Prapti</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Tantra Badha Nivaran</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-box">
+        <h3>Contact Info</h3>
+
+        <div class="footer-contact">
+            <p><i class="fa-solid fa-phone"></i> +91 9000000000</p>
+            <p><i class="fa-solid fa-envelope"></i> info@baglamukhi.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Ujjain, Madhya Pradesh</p>
+            <p><i class="fa-solid fa-clock"></i> 6:00 AM - 9:00 PM</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-box">
+        <h3>Scan & Connect</h3>
+
+        <div class="qr-box">
+            <img src="images/qr.png" alt="QR Code">
+            <p>Scan QR Code</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    <p>
+        © 2026 Design By Allsoft Infotech and Multimedia Pvt. Ltd.
+    </p>
+</div>
+
+</footer>
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalText"></p>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleMenu(){
+
+const menu=document.getElementById("menu");
+
+if(menu.style.display==="flex"){
+
+menu.style.display="none";
+
+}else{
+
+menu.style.display="flex";
+
+}
+
+}
+
+
+const slides=document.getElementById("slides");
+
+const totalSlides=document.querySelectorAll(".slide").length;
+
+let index=0;
+
+const firstClone=slides.children[0].cloneNode(true);
+
+slides.appendChild(firstClone);
+
+setInterval(()=>{
+
+index++;
+
+slides.style.transition=".7s";
+
+slides.style.transform=`translateX(-${index*100}%)`;
+
+if(index===totalSlides){
+
+setTimeout(()=>{
+
+slides.style.transition="none";
+
+slides.style.transform="translateX(0)";
+
+index=0;
+
+},700);
+
+}
+
+},3000);
+
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("about-show");
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.2});
+
+document.querySelectorAll(
+
+'.about-image,.about-content,.about-heading,.card'
+
+).forEach(el=>{
+
+observer.observe(el);
+
+});
+
+
+
+//========================
+// MODAL
+//========================
+
+function openModal(title,text){
+
+document.getElementById("modal").style.display="flex";
+
+document.getElementById("modalTitle").innerHTML=title;
+
+document.getElementById("modalText").innerHTML=text;
+
+}
+
+function closeModal(){
+
+document.getElementById("modal").style.display="none";
+
+}
+
+window.onclick=function(e){
+
+if(e.target===document.getElementById("modal")){
+
+closeModal();
+
+}
+
+}
+
+
+function showCallNumber(){
+
+if(confirm("Call +91 9000000000 ?")){
+
+window.location.href="tel:+919000000000";
+
+}
+
+}
+</script>
+</body>
+</html>

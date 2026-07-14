@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>About Us - Maa Baglamukhi</title>
+
+<link rel="stylesheet" href="css/all.min.css">
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+font-size:16px;
+-webkit-text-size-adjust:100%;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+
+
+background:linear-gradient(
+135deg,
+#fff8f5,
+#f9d8d8,
+#c62828,
+#8b0000,
+#4a0000
+);
+
+overflow-x:hidden;
+color:#4e342e;
+position:relative;
+min-width:320px;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:100%;
+max-width:1300px;
+margin:auto;
+padding:0 20px;
+}
+
+
+
+body::before{
+content:"";
+position:fixed;
+top:-200px;
+left:-200px;
+width:500px;
+height:500px;
+background:
+radial-gradient(circle,
+rgba(255,193,7,.18),
+transparent 70%);
+z-index:-2;
+animation:moveGlow 10s linear infinite;
+pointer-events:none;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-250px;
+right:-200px;
+width:550px;
+height:550px;
+background:
+radial-gradient(circle,
+rgba(255,152,0,.15),
+transparent 70%);
+z-index:-2;
+animation:moveGlow2 12s linear infinite;
+pointer-events:none;
+}
+
+
+.row1{
+background:linear-gradient(90deg,#8B0000,#C62828,#B71C1C);
+color:white;
+padding:12px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:10px;
+font-size:14px;
+}
+
+.row1 a{
+color:white;
+margin-right:18px;
+transition:.3s;
+display:inline-flex;
+align-items:center;
+gap:6px;
+word-break:break-word;
+}
+
+.row1 a:hover{
+color:#FFD700;
+}
+
+
+.navbar{
+position:sticky;
+top:0;
+z-index:999;
+
+display:flex;
+justify-content:space-between;
+align-items:center;		
+padding:18px 4%;
+background:rgba(139,0,0,.92);
+backdrop-filter:blur(15px);
+box-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+
+.logo{
+font-size:34px;
+font-weight:700;
+font-weight:bold;	
+color:#FFD700;
+display:flex;
+align-items:center;
+gap:8px;
+}
+.nav-links{
+display:flex;
+list-style:none;
+gap:18px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.nav-links li a{
+font-size:16px;
+font-weight:600;
+letter-spacing:.4px;
+color:white;
+transition:.3s;
+white-space:nowrap;
+}
+
+.nav-links li a:hover,
+.nav-links li .active{
+color:#FFD700;
+}
+
+.menu-icon{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:white;
+}
+
+@media(max-width:1024px){
+
+.navbar{
+padding:12px 2%;
+}
+
+.logo{
+font-size:24px;
+}
+
+.nav-links{
+gap:12px;
+}
+
+.nav-links li a{
+font-size:14px;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.menu-icon{
+display:block;
+}
+
+.nav-links{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:#8B0000;
+flex-direction:column;
+padding:15px 0;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.nav-links li{
+width:100%;
+text-align:center;
+}
+
+.nav-links li a{
+display:block;
+color:#990033;
+padding:12px;
+font-size:15px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active{
+    color:#990033;
+}
+
+}
+
+
+.page-banner{
+min-height:420px;
+
+background:
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.65)),
+url('images/b10.jpg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:60px 20px;
+position:relative;
+overflow:hidden;
+}
+
+.page-banner::before{
+content:"";
+position:absolute;
+
+width:500px;
+height:500px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+top:-150px;
+left:-100px;
+
+animation:floatCircle 8s linear infinite;
+}
+
+.banner-content{
+position:relative;
+z-index:2;
+width:100%;
+max-width:900px;
+}
+
+.banner-content h1{
+font-size:clamp(38px,8vw,70px);
+color:white;
+margin-bottom:15px;
+text-shadow:0 5px 20px rgba(0,0,0,.4);
+animation:fadeDown 1s ease;
+word-break:break-word;
+}
+
+.banner-content p{
+font-size:clamp(15px,2vw,19px);
+color:#f5f5f5;
+line-height:1.9;
+animation:fadeUp 1.2s ease;
+}
+
+
+.about-section{
+padding:90px 0;
+}
+
+.about-box{
+background:
+linear-gradient(
+rgba(255,248,220,.55),
+rgba(255,239,180,.45)
+),
+url('images/g9.gif');
+
+background-size:cover;
+background-position:center;
+
+border:1px solid rgba(255,215,0,.25);
+
+border-radius:35px;
+
+padding:80px 6%;
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.15);
+}
+
+
+.about-wrapper{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:row;
+gap:30px;
+flex-wrap:wrap;
+}
+
+
+.about-image{
+flex:0 0 40%;
+max-width:400px;
+
+opacity:0;
+transform:translateX(-120px);
+transition:1.2s;
+
+position:relative;
+}
+
+.about-image.show{
+opacity:1;
+transform:translateX(0);
+}
+
+.about-image img{
+width:100%;
+border-radius:35px;
+box-shadow:0 20px 45px rgba(0,0,0,.25);
+transition:.5s;
+}
+
+.about-image:hover img{
+transform:scale(1.03);
+}
+
+.exp-box{
+position:absolute;
+bottom:15px;
+right:10px;
+
+background:
+linear-gradient(135deg,#ffca28,#ff9800);
+background-image:url('images/b2.jpg');
+padding:20px;
+border-radius:18px;
+padding:12px 15px;
+color:#4e342e;
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+animation:bounce 2s infinite;
+
+min-width:95px;
+}
+
+
+
+.exp-box h2{
+    font-size:26px;
+}
+
+.exp-box p{
+    font-size:13px;
+}
+
+.about-content{
+flex:0 0 55%;
+text-align:left;
+max-width:650px;
+
+opacity:0;
+transform:translateX(120px);
+transition:1.2s;
+}
+
+.about-content.show{
+opacity:1;
+transform:translateX(0);
+}
+
+.section-title{
+color:#ff9800;
+font-size:20px;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+.about-content h2{
+font-size:clamp(34px,5vw,50px);
+color:#b71c1c;
+margin-bottom:25px;
+line-height:1.3;
+}
+
+.about-content p{
+font-size:16px;
+line-height:1.9;
+margin-bottom:18px;
+color:#5d4037;
+}
+
+
+.about-buttons{
+margin-top:35px;
+justify-content:flex-start;
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.about-btn{
+padding:15px 30px;
+border-radius:50px;
+font-weight:700;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+}
+
+.btn1{
+background:linear-gradient(90deg,#ffca28,#ff9800);
+color:#4e342e;
+}
+
+.btn2{
+background:linear-gradient(90deg,#25d366,#128c7e);
+color:white;
+}
+
+.about-btn:hover{
+transform:translateY(-6px) scale(1.04);
+}
+
+
+.mission-section{
+padding:0 0 90px;
+}
+
+.mission-box{
+
+background:
+linear-gradient(
+rgba(255,255,255,.82),
+rgba(255,255,255,.82)
+),
+url('images/g2.gif');
+
+background-size:cover;
+background-position:center;
+
+border-radius:35px;
+
+padding:80px 5%;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+}
+
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+@media(max-width:1024px){
+
+.cards{
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.card{
+padding:25px 15px;
+min-height:280px;
+}
+
+.card h3{
+font-size:22px;
+}
+
+.card p{
+font-size:14px;
+line-height:1.7;
+}
+
+.card i{
+width:75px;
+height:75px;
+font-size:30px;
+}
+
+}
+
+.card{
+position:relative;
+overflow:hidden;
+
+padding:45px 30px;
+
+border-radius:35px;
+
+background:
+linear-gradient(
+145deg,
+rgba(255,230,120,.25),
+rgba(255,193,7,.18)
+);
+
+backdrop-filter:blur(14px);
+
+text-align:center;
+
+border:1px solid rgba(255,215,0,.28);
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.15),
+0 0 30px rgba(255,193,7,.15);
+
+transition:.7s;
+
+z-index:1;
+
+opacity:0;
+
+transform:
+translateY(90px)
+scale(.85);
+
+min-height:320px;
+
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+}
+
+.card.show{
+opacity:1;
+
+transform:
+translateY(0)
+scale(1);
+
+animation:cardPop 1s ease;
+}
+
+.card::before{
+content:"";
+position:absolute;
+
+top:-100%;
+left:-100%;
+
+width:250%;
+height:250%;
+
+background:
+radial-gradient(circle,
+rgba(255,193,7,.28),
+transparent 60%);
+
+animation:rotateGlow 8s linear infinite;
+
+z-index:-1;
+}
+
+.card::after{
+content:"";
+position:absolute;
+
+top:-120%;
+left:-120%;
+
+width:200%;
+height:200%;
+
+background:
+linear-gradient(
+45deg,
+transparent,
+rgba(255,255,255,.55),
+transparent
+);
+
+transform:rotate(25deg);
+transition:1s;
+}
+
+.card:hover::after{
+left:120%;
+}
+
+.card:hover{
+transform:
+translateY(-18px)
+scale(1.03);
+
+box-shadow:
+0 20px 45px rgba(255,152,0,.35),
+0 0 35px rgba(255,193,7,.25);
+}
+
+.card i{
+width:95px;
+height:95px;
+
+margin:0 auto 25px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:40px;
+color:white;
+
+border-radius:50%;
+
+background:
+linear-gradient(135deg,#ffca28,#ff9800);
+
+box-shadow:
+0 12px 28px rgba(255,152,0,.35);
+
+animation:floatIcon 2.5s infinite ease-in-out;
+
+flex-shrink:0;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:16px;
+color:#b71c1c;
+word-break:break-word;
+}
+
+.card p{
+font-size:16px;
+line-height:1.9;
+color:#5d4037;
+}
+
+
+.footer{
+background:linear-gradient(90deg,#4e342e,#3e2723);
+color:white;
+padding:30px 20px;
+text-align:center;
+font-size:15px;
+margin-top:20px;
+}
+
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes bounce{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-10px);
+}
+}
+
+@keyframes floatCircle{
+0%{
+transform:rotate(0deg) translateY(0);
+}
+50%{
+transform:rotate(180deg) translateY(20px);
+}
+100%{
+transform:rotate(360deg) translateY(0);
+}
+}
+
+@keyframes rotateGlow{
+100%{
+transform:rotate(360deg);
+}
+}
+
+@keyframes floatIcon{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-12px);
+}
+}
+
+@keyframes cardPop{
+0%{
+opacity:0;
+transform:
+translateY(100px)
+scale(.8)
+rotateX(40deg);
+}
+100%{
+opacity:1;
+transform:
+translateY(0)
+scale(1)
+rotateX(0deg);
+}
+}
+
+@keyframes moveGlow{
+0%{
+transform:translate(0,0);
+}
+50%{
+transform:translate(80px,40px);
+}
+100%{
+transform:translate(0,0);
+}
+}
+
+@keyframes moveGlow2{
+0%{
+transform:translate(0,0);
+}
+50%{
+transform:translate(-60px,-50px);
+}
+100%{
+transform:translate(0,0);
+}
+}
+
+
+@media(max-width:992px){
+
+.about-wrapper{
+flex-direction:column;
+}
+
+.about-content{
+text-align:center;
+max-width:100%;
+}
+
+.about-buttons{
+justify-content:center;
+}
+
+.about-image{
+max-width:550px;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.row1{
+flex-direction:column;
+text-align:center;
+}
+
+.navbar{
+padding:14px 5%;
+}
+
+.nav-links{
+position:absolute;
+top:72px;
+left:0;
+width:100%;
+
+background:
+linear-gradient(90deg,#fff8dc,#ffeaa7);
+
+flex-direction:column;
+display:none;
+
+padding:22px 0;
+text-align:center;
+gap:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.menu-icon{
+display:block;
+}
+
+.page-banner{
+min-height:340px;
+}
+
+.about-section{
+padding:70px 0;
+}
+
+.about-box,
+.mission-box{
+padding:60px 20px;
+border-radius:25px;
+}
+
+.about-content h2{
+font-size:34px;
+}
+
+.card{
+padding:38px 22px;
+min-height:auto;
+}
+
+.card h3{
+font-size:24px;
+}
+
+.exp-box{
+position:relative;
+right:auto;
+bottom:auto;
+margin:-15px 35px 0px 125px;
+width:fit-content;
+}
+
+.about-btn{
+width:100%;
+}
+
+.about-buttons{
+flex-direction:column;
+}
+
+}
+
+
+
+
+@media(max-width:480px){
+
+.banner-content h1{
+font-size:34px;
+}
+
+.logo{
+font-size:24px;
+}
+
+.section-title{
+font-size:17px;
+letter-spacing:1px;
+}
+
+.about-content p{
+font-size:15px;
+}
+
+.card i{
+width:80px;
+height:80px;
+font-size:34px;
+}
+
+.cards{
+    grid-template-columns:1fr !important;
+    gap:20px;
+}
+
+.card{
+    width:100%;
+}
+
+}
+
+
+
+.premium-footer{
+background:linear-gradient(135deg,#4a0000,#8B0000,#B71C1C);
+padding:35px 4%;
+border-top:2px solid rgba(255,170,0,.25);
+box-shadow:0 -10px 40px rgba(0,0,0,.08);
+}
+
+.footer-container{
+max-width:1200px;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+}
+
+.footer-box h3{
+font-size:24px;
+margin-bottom:25px;
+color:#FFD700;
+position:relative;
+}
+
+.footer-box h3::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-10px;
+width:60px;
+height:4px;
+border-radius:20px;
+background:linear-gradient(90deg,#ff9800,#ffb300);
+}
+
+.footer-links{
+list-style:none;
+}
+
+.footer-links li{
+margin-bottom:14px;
+}
+
+.footer-links li a{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:.3s;
+}
+
+.footer-links li a:hover{
+transform:translateX(6px);
+color:#FFD700;
+}
+
+.footer-links i,
+.footer-contact i{
+color:white;
+}
+
+.footer-contact p{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:14px;
+font-size:15px;
+color:white;
+}
+
+.footer-social{
+display:flex;
+gap:12px;
+margin-top:20px;
+}
+
+.footer-social a{
+width:45px;
+height:45px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#fff;
+color:#FFD700;
+font-size:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.footer-social a:hover{
+background:linear-gradient(135deg,#ffca28,#ff9800);
+color:#fff;
+transform:translateY(-5px);
+}
+
+.qr-box{
+background:rgba(255,255,255,.6);
+padding:15px;
+border-radius:20px;
+text-align:center;
+}
+
+.qr-box img{
+width:150px;
+height:150px;
+object-fit:cover;
+margin:auto;
+border-radius:10px;
+}
+
+.qr-box p{
+margin-top:10px;
+font-size:14px;
+font-weight:600;
+color:white;
+}
+
+.footer-bottom{
+margin-top:35px;
+padding-top:20px;
+border-top:1px solid rgba(93,64,55,.15);
+text-align:center;
+}
+
+.footer-bottom p{
+font-size:16px;
+font-weight:500;
+color:white;
+}
+
+
+@media(max-width:1024px){
+
+.footer-container{
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.footer-box h3{
+font-size:20px;
+}
+
+.footer-links li a,
+.footer-contact p{
+font-size:14px;
+}
+
+.qr-box img{
+width:120px;
+height:120px;
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-container{
+grid-template-columns:1fr;
+}
+
+.footer-box{
+text-align:center;
+}
+
+.footer-box h3::after{
+left:50%;
+transform:translateX(-50%);
+}
+
+.footer-links li a,
+.footer-contact p{
+justify-content:center;
+}
+
+.footer-social{
+justify-content:center;
+}
+
+}
+
+.call-btn{
+
+position:fixed;
+
+left:25px;
+bottom:20px;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:26px;
+
+color:#4e342e;
+
+text-decoration:none;
+
+z-index:9999;
+
+background:
+linear-gradient(135deg, #ffd54f, #ffca28);
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+animation:floatBtn 2s infinite;
+
+transition:.4s;
+}
+
+
+.whatsapp-btn{
+
+position:fixed;
+
+right:20px;
+bottom:20px;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:26px;
+
+color:white;
+
+text-decoration:none;
+
+z-index:9999;
+
+background:
+linear-gradient(135deg,#25d366,#128c7e);
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+animation:floatBtn 2s infinite;
+
+transition:.4s;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+
+transform:
+scale(1.12)
+translateY(-5px);
+}
+
+@keyframes floatBtn{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+}
+
+
+@media(max-width:768px){
+
+.call-btn{
+
+left:15px;
+bottom:85px;
+
+width:55px;
+height:55px;
+
+font-size:22px;
+}
+
+.whatsapp-btn{
+
+right:15px;
+bottom:15px;
+
+width:55px;
+height:55px;
+
+font-size:22px;
+}
+
+}
+
+
+.banner-buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.banner-btn{
+position:relative;
+overflow:hidden;
+padding:16px 38px;
+border-radius:50px;
+font-size:18px;
+font-weight:700;
+letter-spacing:.5px;
+text-decoration:none;
+transition:.45s;
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+}
+
+.banner-btn::before{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:rgba(255,255,255,.4);
+transform:skewX(-25deg);
+transition:.8s;
+}
+
+.banner-btn:hover::before{
+left:140%;
+}
+
+.book-btn{
+background:linear-gradient(135deg,#ff9800,#ff5722);
+color:#fff;
+border:2px solid transparent;
+}
+
+.book-btn:hover{
+transform:translateY(-8px) scale(1.06);
+box-shadow:0 18px 40px rgba(255,87,34,.45);
+}
+
+.read-btn{
+background:rgba(255,255,255,.15);
+border:2px solid rgba(255,255,255,.8);
+color:#fff;
+}
+
+.read-btn:hover{
+background:#fff;
+color:#ff9800;
+transform:translateY(-8px) scale(1.06);
+box-shadow:0 18px 40px rgba(255,255,255,.35);
+}
+
+.banner-btn i{
+margin-right:8px;
+font-size:18px;
+}
+
+@media(max-width:768px){
+
+.banner-buttons{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.banner-btn{
+width:240px;
+text-align:center;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div class="row1">
+
+<div>
+<a href="tel:+919000000000">
+<i class="fa-solid fa-phone"></i>
++91 9000000000
+</a>
+</div>
+
+<div>
+
+<a href="#">
+<i class="fa-solid fa-envelope"></i>
+poonam13prajapat@gmail.com
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+@prajapat_ji
+</a>
+
+</div>
+
+</div>
+
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-om"></i>
+Baglamukhi
+</div>
+
+<ul class="nav-links" id="menu">
+
+<li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+
+<li><a href="about.html" class="active">
+<i class="fa-solid fa-circle-info"></i> About
+</a></li>
+
+<li><a href="anushthan.html">
+<i class="fa-solid fa-hands-praying"></i> Services
+</a></li>
+
+<li><a href="gallery.html">
+<i class="fa-solid fa-image"></i> Gallery
+</a></li>
+
+<li><a href="booking.html">
+<i class="fa-solid fa-envelope"></i> Booking
+</a></li>
+
+<li><a href="contact.html">
+<i class="fa-solid fa-phone"></i> Contact
+</a></li>
+
+</ul>
+
+<div class="menu-icon" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+
+
+<section class="page-banner">
+
+<div class="banner-content">
+
+<h1>About Us</h1>
+
+<p>
+माँ बगलामुखी की दिव्य कृपा और आध्यात्मिक शक्ति के माध्यम से
+हम भक्तों को शांति, सुरक्षा और सफलता का मार्ग प्रदान करते हैं।
+</p>
+
+<div class="banner-buttons">
+
+<a href="booking.html" class="banner-btn book-btn">
+<i class="fa-solid fa-calendar-check"></i>
+Book Now
+</a>
+
+<a href="#about" class="banner-btn read-btn">
+<i class="fa-solid fa-circle-info"></i>
+Read More
+</a>
+
+</div>
+</div>
+
+</section>
+
+
+<section class="about-section" id="about">
+
+<div class="container">
+
+<div class="about-box">
+
+<div class="about-wrapper">
+
+<div class="about-image reveal">
+
+<img src="images/b4.jpg" alt="Maa Baglamukhi">
+
+<div class="exp-box">
+<h2>15+</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+<div class="about-content reveal">
+
+<h4 class="section-title">
+✨ Maa Baglamukhi Divine Temple ✨
+</h4>
+
+<h2>
+जय माँ बगलामुखी 🙏
+</h2>
+
+<p>
+माँ बगलामुखी शक्ति, विजय और सुरक्षा की देवी मानी जाती हैं।
+उनकी कृपा से जीवन की बाधाएँ समाप्त होती हैं और सफलता का मार्ग खुलता है।
+</p>
+
+<p>
+हम यहाँ विभिन्न धार्मिक सेवाएँ जैसे पूजा, हवन, अनुष्ठान और साधना कराते हैं
+जिससे जीवन में शांति, समृद्धि और सकारात्मक ऊर्जा आती है।
+</p>
+
+<p>
+हमारा उद्देश्य है कि हर भक्त को सही मार्गदर्शन और सच्ची भक्ति का अनुभव मिले।
+यहाँ की हर सेवा पूरी श्रद्धा और विधि-विधान के साथ की जाती है।
+</p>
+
+<div class="about-buttons">
+
+<a href="tel:+919000000000" class="about-btn btn1" onclick="showCallNumber()">
+<i class="fa-solid fa-phone"></i>
+Call Now
+</a>
+
+<a href="https://wa.me/919000000000" 
+target="_blank"
+class="about-btn btn2">
+
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="mission-section">
+
+<div class="container">
+
+<div class="mission-box">
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>विशेष पूजा</h3>
+
+<p>
+बगलामुखी पूजा, हवन, जाप एवं विशेष अनुष्ठान पूरी श्रद्धा और विधि-विधान से कराए जाते हैं।
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h3>धार्मिक ज्ञान</h3>
+
+<p>
+मंत्र, साधना, तंत्र एवं आध्यात्मिक जानकारी द्वारा भक्तों को सही मार्गदर्शन दिया जाता है।
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h3>समस्या समाधान</h3>
+
+<p>
+जीवन की बाधाएँ, शत्रु दोष, नजर दोष एवं अन्य समस्याओं के समाधान हेतु विशेष पूजा की जाती है।
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<a href="#" class="call-btn" onclick="showCallNumber()">
+    <i class="fa-solid fa-phone"></i>
+</a>
+
+
+
+<a href="https://wa.me/919000000000"
+target="_blank"
+class="whatsapp-btn">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<footer class="premium-footer">
+
+<div class="footer-container">
+
+    <div class="footer-box">
+        <h3>Quick Links</h3>
+
+        <ul class="footer-links">
+            <li><a href="home.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="anushthan.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Gallery</a></li>
+            <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Booking</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+        </ul>
+    </div>
+
+  
+    <div class="footer-box">
+        <h3>Our Services</h3>
+
+        <ul class="footer-links">
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Baglamukhi Hawan</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Mirchi Hawan</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Shatru Badha Nivaran</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Court Case Vijay</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Laxmi Prapti</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Tantra Badha Nivaran</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+        <h3>Contact Info</h3>
+
+        <div class="footer-contact">
+            <p><i class="fa-solid fa-phone"></i> +91 9000000000</p>
+            <p><i class="fa-solid fa-envelope"></i> info@baglamukhi.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Ujjain, Madhya Pradesh</p>
+            <p><i class="fa-solid fa-clock"></i> 6:00 AM - 9:00 PM</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- QR -->
+    <div class="footer-box">
+        <h3>Scan & Connect</h3>
+
+        <div class="qr-box">
+            <img src="images/qr.png" alt="QR Code">
+            <p>Scan QR Code</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    <p>
+        © 2026 Design By Allsoft Infotech and Multimedia Pvt. Ltd.
+    </p>
+</div>
+
+</footer>
+
+<script>
+
+
+function toggleMenu(){
+
+let menu = document.getElementById("menu");
+
+menu.classList.toggle("active");
+
+}
+
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach((entry)=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{
+threshold:0.2
+});
+
+document.querySelectorAll(
+'.reveal,.card'
+).forEach((el)=>{
+
+observer.observe(el);
+
+});
+
+
+
+function showCallNumber() {
+
+    if(confirm("Call +91 9000000000 ?")){
+
+        window.location.href = "tel:+919000000000";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

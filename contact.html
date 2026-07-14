@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | जय माँ बगलामुखी</title>
+
+<link rel="stylesheet" href="css/all.min.css">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+font-size:16px;
+-webkit-text-size-adjust:100%;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+
+
+background:linear-gradient(
+135deg,
+#fff8f5,
+#f9d8d8,
+#c62828,
+#8b0000,
+#4a0000
+);
+
+overflow-x:hidden;
+color:#4e342e;
+position:relative;
+min-width:320px;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:100%;
+max-width:1300px;
+margin:auto;
+padding:0 20px;
+}
+
+
+
+body::before{
+content:"";
+position:fixed;
+top:-200px;
+left:-200px;
+width:500px;
+height:500px;
+background:
+radial-gradient(circle,
+rgba(255,193,7,.18),
+transparent 70%);
+z-index:-2;
+animation:moveGlow 10s linear infinite;
+pointer-events:none;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-250px;
+right:-200px;
+width:550px;
+height:550px;
+background:
+radial-gradient(circle,
+rgba(255,152,0,.15),
+transparent 70%);
+z-index:-2;
+animation:moveGlow2 12s linear infinite;
+pointer-events:none;
+}
+
+
+.row1{
+background:linear-gradient(90deg,#8B0000,#C62828,#B71C1C);
+color:white;
+padding:12px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:10px;
+font-size:14px;
+}
+
+.row1 a{
+color:white;
+margin-right:18px;
+transition:.3s;
+display:inline-flex;
+align-items:center;
+gap:6px;
+word-break:break-word;
+}
+
+.row1 a:hover{
+color:#FFD700;
+}
+
+
+.navbar{
+position:sticky;
+top:0;
+z-index:999;
+
+display:flex;
+justify-content:space-between;
+align-items:center;		
+padding:18px 4%;
+background:rgba(139,0,0,.92);
+backdrop-filter:blur(15px);
+box-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+
+.logo{
+font-size:34px;
+font-weight:700;
+font-weight:bold;	
+color:#FFD700;
+display:flex;
+align-items:center;
+gap:8px;
+}
+.nav-links{
+display:flex;
+list-style:none;
+gap:18px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.nav-links li a{
+font-size:16px;
+font-weight:600;
+letter-spacing:.4px;
+color:white;
+transition:.3s;
+white-space:nowrap;
+}
+
+.nav-links li a:hover,
+.nav-links li .active{
+color:#FFD700;
+}
+
+.menu-icon{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:white;
+}
+
+@media(max-width:1024px){
+
+.navbar{
+padding:12px 2%;
+}
+
+.logo{
+font-size:24px;
+}
+
+.nav-links{
+gap:12px;
+}
+
+.nav-links li a{
+font-size:14px;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.menu-icon{
+display:block;
+}
+
+.nav-links{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:#8B0000;
+flex-direction:column;
+padding:15px 0;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.nav-links li{
+width:100%;
+text-align:center;
+}
+
+.nav-links li a{
+display:block;
+color:#990033;
+padding:12px;
+font-size:15px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active{
+    color:#990033;
+}
+
+}
+
+.page-banner{
+min-height:420px;
+
+background:
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.65)),
+url('images/b10.jpg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:80px 20px;
+position:relative;
+overflow:hidden;
+}
+
+.page-banner::before{
+content:"";
+position:absolute;
+
+width:450px;
+height:450px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+top:-150px;
+left:-100px;
+
+animation:floatCircle 8s linear infinite;
+}
+
+@keyframes floatCircle{
+0%{
+transform:rotate(0deg);
+}
+100%{
+transform:rotate(360deg);
+}
+}
+
+.banner-content{
+position:relative;
+z-index:2;
+max-width:900px;
+}
+
+.banner-content h1{
+font-size:clamp(38px,6vw,68px);
+color:white;
+
+margin-bottom:12px;
+
+text-shadow:0 5px 20px rgba(0,0,0,.4);
+
+animation:fadeDown 1s ease;
+}
+
+.banner-content p{
+font-size:clamp(15px,2vw,19px);
+color:#f5f5f5;
+
+line-height:1.8;
+
+animation:fadeUp 1.2s ease;
+}
+
+
+.contact-section{
+padding:80px 0;
+}
+
+.contact-wrapper{
+max-width:1300px;
+margin:auto;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+
+gap:35px;
+align-items:stretch;
+}
+
+
+.pandit-card{
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.78),
+rgba(255,248,220,.7)
+);
+
+backdrop-filter:blur(12px);
+
+padding:18px;
+
+border-radius:32px;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.10);
+
+border:1px solid rgba(255,215,0,.25);
+
+overflow:hidden;
+
+opacity:0;
+transform:translateX(-120px);
+transition:1.1s;
+}
+
+.pandit-card.show{
+opacity:1;
+transform:translateX(0);
+}
+
+.pandit-image{
+height:100%;
+border-radius:25px;
+overflow:hidden;
+position:relative;
+}
+
+.pandit-image img{
+width:100%;
+height:100%;
+min-height:650px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+transition:.6s;
+}
+
+.pandit-card:hover img{
+transform:scale(1.04);
+}
+
+.image-glow{
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+to top,
+rgba(0,0,0,.45),
+transparent 50%
+);
+}
+
+
+.contact-info{
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.78),
+rgba(255,248,220,.72)
+);
+
+backdrop-filter:blur(12px);
+
+padding:40px 30px;
+
+border-radius:32px;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.10);
+
+border:1px solid rgba(255,215,0,.25);
+
+opacity:0;
+transform:translateX(120px);
+transition:1.1s;
+}
+
+.contact-info.show{
+opacity:1;
+transform:translateX(0);
+}
+
+
+.small-title{
+color:#ff9800;
+font-size:15px;
+letter-spacing:2px;
+margin-bottom:12px;
+}
+
+
+.contact-info h2{
+font-size:clamp(30px,4vw,42px);
+color:#b71c1c;
+
+margin-bottom:18px;
+line-height:1.3;
+}
+
+
+.contact-info p{
+font-size:15px;
+line-height:1.9;
+
+color:#5d4037;
+
+margin-bottom:22px;
+}
+
+
+.info-box{
+display:flex;
+align-items:flex-start;
+gap:16px;
+
+margin-bottom:22px;
+}
+
+
+.info-icon{
+min-width:55px;
+height:55px;
+
+border-radius:18px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+color:white;
+
+background:
+linear-gradient(135deg,#ffca28,#ff9800);
+
+box-shadow:
+0 10px 25px rgba(255,152,0,.20);
+
+animation:floatIcon 2.5s infinite ease-in-out;
+}
+
+
+.info-text h3{
+font-size:21px;
+margin-bottom:5px;
+color:#b71c1c;
+}
+
+.info-text p{
+margin:0;
+font-size:15px;
+line-height:1.7;
+}
+
+
+.contact-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
+margin-top:30px;
+}
+
+.contact-btn{
+padding:14px 28px;
+
+border-radius:50px;
+
+text-decoration:none;
+font-weight:700;
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+transition:.4s;
+
+font-size:15px;
+}
+
+.btn1{
+background:
+linear-gradient(90deg,#ffd54f,#ffca28);
+
+color:#4e342e;
+
+box-shadow:
+0 10px 25px rgba(255,193,7,.25);
+}
+
+.btn2{
+background:
+linear-gradient(90deg,#25d366,#128c7e);
+
+color:white;
+}
+
+.contact-btn:hover{
+transform:
+translateY(-5px)
+scale(1.03);
+}
+
+
+.map-section{
+padding:0 0 80px;
+}
+
+.map-box{
+max-width:1300px;
+margin:auto;
+
+border-radius:30px;
+overflow:hidden;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,0.10);
+
+border:1px solid rgba(255,215,0,.25);
+
+opacity:0;
+transform:translateY(100px);
+transition:1.2s;
+}
+
+.map-box.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.map-box iframe{
+width:100%;
+height:420px;
+border:none;
+display:block;
+}
+
+
+.whatsapp,
+.call-btn{
+position:fixed;
+bottom:25px;
+
+width:58px;
+height:58px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:22px;
+
+color:white;
+
+z-index:999;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+animation:bounce 1.5s infinite;
+}
+
+.whatsapp{
+right:25px;
+
+background:
+linear-gradient(135deg,#25d366,#128c7e);
+}
+
+.call-btn{
+left:25px;
+
+background:
+linear-gradient(135deg,#ffd54f,#ffca28);
+
+color:#4e342e;
+}
+
+@keyframes bounce{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-10px);
+}
+}
+
+
+.footer{
+background:
+linear-gradient(90deg,#4e342e,#3e2723);
+
+padding:45px 20px;
+text-align:center;
+
+color:white;
+}
+
+.footer h3{
+font-size:30px;
+margin-bottom:12px;
+}
+
+.footer p{
+max-width:700px;
+margin:auto;
+
+line-height:1.8;
+color:#ddd;
+font-size:15px;
+}
+
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes floatIcon{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-10px);
+}
+}
+
+
+@media(min-width:1600px){
+
+.container,
+.contact-wrapper,
+.map-box{
+max-width:1500px;
+}
+
+body{
+font-size:18px;
+}
+
+}
+
+
+@media(max-width:992px){
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.contact-info{
+text-align:center;
+}
+
+.contact-buttons{
+justify-content:center;
+}
+
+.info-box{
+text-align:left;
+}
+
+.pandit-image img{
+min-height:auto;
+height:500px;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.row1{
+flex-direction:column;
+text-align:center;
+}
+
+.menu-icon{
+display:block;
+}
+
+.nav-links{
+position:absolute;
+
+top:75px;
+left:0;
+
+width:100%;
+
+background:#fff8dc;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:20px 0;
+
+display:none;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.page-banner{
+min-height:320px;
+padding:100px 20px;
+}
+
+.banner-content h1{
+font-size:42px;
+}
+
+.banner-content p{
+font-size:15px;
+}
+
+.contact-section{
+padding:60px 0;
+}
+
+.contact-info{
+padding:30px 22px;
+}
+
+.contact-info h2{
+font-size:32px;
+}
+
+.contact-btn{
+width:100%;
+}
+
+.pandit-image img{
+height:380px;
+}
+
+.map-box iframe{
+height:300px;
+}
+
+.info-icon{
+min-width:52px;
+height:52px;
+font-size:20px;
+}
+
+.info-text h3{
+font-size:18px;
+}
+
+}
+
+
+@media(max-width:480px){
+
+.logo{
+font-size:22px;
+}
+
+.banner-content h1{
+font-size:34px;
+}
+
+.contact-info h2{
+font-size:28px;
+}
+
+.contact-info{
+padding:25px 18px;
+}
+
+.info-box{
+gap:12px;
+}
+
+.info-text h3{
+font-size:17px;
+}
+
+.info-text p{
+font-size:14px;
+}
+
+.whatsapp,
+.call-btn{
+width:52px;
+height:52px;
+font-size:20px;
+}
+
+}
+
+
+.premium-footer{
+background:linear-gradient(135deg,#4a0000,#8B0000,#B71C1C);
+padding:35px 4%;
+border-top:2px solid rgba(255,170,0,.25);
+box-shadow:0 -10px 40px rgba(0,0,0,.08);
+}
+
+.footer-container{
+max-width:1200px;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+}
+
+.footer-box h3{
+font-size:24px;
+margin-bottom:25px;
+color:#FFD700;
+position:relative;
+}
+
+.footer-box h3::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-10px;
+width:60px;
+height:4px;
+border-radius:20px;
+background:linear-gradient(90deg,#ff9800,#ffb300);
+}
+
+.footer-links{
+list-style:none;
+}
+
+.footer-links li{
+margin-bottom:14px;
+}
+
+.footer-links li a{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:.3s;
+}
+
+.footer-links li a:hover{
+transform:translateX(6px);
+color:#FFD700;
+}
+
+.footer-links i,
+.footer-contact i{
+color:white;
+}
+
+.footer-contact p{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:14px;
+font-size:15px;
+color:white;
+}
+
+.footer-social{
+display:flex;
+gap:12px;
+margin-top:20px;
+}
+
+.footer-social a{
+width:45px;
+height:45px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#fff;
+color:#FFD700;
+font-size:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.footer-social a:hover{
+background:linear-gradient(135deg,#ffca28,#ff9800);
+color:#fff;
+transform:translateY(-5px);
+}
+
+.qr-box{
+background:rgba(255,255,255,.6);
+padding:15px;
+border-radius:20px;
+text-align:center;
+}
+
+.qr-box img{
+width:150px;
+height:150px;
+object-fit:cover;
+margin:auto;
+border-radius:10px;
+}
+
+.qr-box p{
+margin-top:10px;
+font-size:14px;
+font-weight:600;
+color:white;
+}
+
+.footer-bottom{
+margin-top:35px;
+padding-top:20px;
+border-top:1px solid rgba(93,64,55,.15);
+text-align:center;
+}
+
+.footer-bottom p{
+font-size:16px;
+font-weight:500;
+color:white;
+}
+
+
+@media(max-width:1024px){
+
+.footer-container{
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.footer-box h3{
+font-size:20px;
+}
+
+.footer-links li a,
+.footer-contact p{
+font-size:14px;
+}
+
+.qr-box img{
+width:120px;
+height:120px;
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-container{
+grid-template-columns:1fr;
+}
+
+.footer-box{
+text-align:center;
+}
+
+.footer-box h3::after{
+left:50%;
+transform:translateX(-50%);
+}
+
+.footer-links li a,
+.footer-contact p{
+justify-content:center;
+}
+
+.footer-social{
+justify-content:center;
+}
+
+}
+
+
+
+.call-btn{
+
+position:fixed;
+
+left:25px;
+bottom:20px;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:26px;
+
+color:#4e342e;
+
+text-decoration:none;
+
+z-index:9999;
+
+background:
+linear-gradient(135deg, #ffd54f, #ffca28);
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+animation:floatBtn 2s infinite;
+
+transition:.4s;
+}
+
+
+.whatsapp-btn{
+
+position:fixed;
+
+right:20px;
+bottom:20px;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:26px;
+
+color:white;
+
+text-decoration:none;
+
+z-index:9999;
+
+background:
+linear-gradient(135deg,#25d366,#128c7e);
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+animation:floatBtn 2s infinite;
+
+transition:.4s;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+
+transform:
+scale(1.12)
+translateY(-5px);
+}
+
+@keyframes floatBtn{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+}
+
+
+@media(max-width:768px){
+
+.call-btn{
+
+left:15px;
+bottom:85px;
+
+width:55px;
+height:55px;
+
+font-size:22px;
+}
+
+.whatsapp-btn{
+
+right:15px;
+bottom:85px;
+
+width:55px;
+height:55px;
+
+font-size:22px;
+}
+
+}
+
+.banner-buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.banner-btn{
+position:relative;
+overflow:hidden;
+padding:16px 38px;
+border-radius:50px;
+font-size:18px;
+font-weight:700;
+letter-spacing:.5px;
+text-decoration:none;
+transition:.45s;
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+}
+
+.banner-btn::before{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:rgba(255,255,255,.4);
+transform:skewX(-25deg);
+transition:.8s;
+}
+
+.banner-btn:hover::before{
+left:140%;
+}
+
+.book-btn{
+background:linear-gradient(135deg,#ff9800,#ff5722);
+color:#fff;
+border:2px solid transparent;
+}
+
+.book-btn:hover{
+transform:translateY(-8px) scale(1.06);
+box-shadow:0 18px 40px rgba(255,87,34,.45);
+}
+
+.read-btn{
+background:rgba(255,255,255,.15);
+border:2px solid rgba(255,255,255,.8);
+color:#fff;
+}
+
+.read-btn:hover{
+background:#fff;
+color:#ff9800;
+transform:translateY(-8px) scale(1.06);
+box-shadow:0 18px 40px rgba(255,255,255,.35);
+}
+
+.banner-btn i{
+margin-right:8px;
+font-size:18px;
+}
+
+@media(max-width:768px){
+
+.banner-buttons{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.banner-btn{
+width:240px;
+text-align:center;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="row1">
+
+<div>
+<a href="tel:+919000000000">
+<i class="fa-solid fa-phone"></i>
++91 9000000000
+</a>
+</div>
+
+<div style="display:flex;gap:18px;flex-wrap:wrap;">
+
+<a href="#">
+<i class="fa-solid fa-envelope"></i>
+info@baglamukhi.com
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+@baglamukhi_temple
+</a>
+
+</div>
+
+</div>
+
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-om"></i>
+Baglamukhi
+</div>
+
+<ul class="nav-links" id="menu">
+
+<li>
+<a href="home.html">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+<i class="fa-solid fa-circle-info"></i>
+About
+</a>
+</li>
+
+<li>
+<a href="anushthan.html">
+<i class="fa-solid fa-hands-praying"></i>
+Services
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+<i class="fa-solid fa-image"></i>
+Gallery
+</a>
+</li>
+
+<li>
+<a href="booking.php">
+<i class="fa-solid fa-calendar-check"></i>
+Booking
+</a>
+</li>
+
+<li>
+<a href="contact.html" class="active">
+<i class="fa-solid fa-phone"></i>
+Contact
+</a>
+</li>
+
+</ul>
+
+<div class="menu-icon" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+
+
+<section class="page-banner">
+
+<div class="banner-content">
+
+<h1>Contact Us</h1>
+
+<p>
+माँ बगलामुखी की कृपा एवं विशेष पूजा-अनुष्ठान से संबंधित
+जानकारी प्राप्त करने हेतु हमसे संपर्क करें।
+</p>
+<div class="banner-buttons">
+
+<a href="booking.php" class="banner-btn book-btn">
+<i class="fa-solid fa-calendar-check"></i>
+Book Now
+</a>
+
+<a href="about.html" class="banner-btn read-btn">
+<i class="fa-solid fa-circle-info"></i>
+Read More
+</a>
+
+</div>
+</div>
+
+</section>
+
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="contact-wrapper">
+
+
+<div class="pandit-card reveal-left">
+
+<div class="pandit-image">
+
+<img src="images/m.jpg" alt="Pandit Ji">
+
+<div class="image-glow"></div>
+
+</div>
+
+</div>
+
+
+<div class="contact-info reveal-right">
+
+<h4 class="small-title">
+🔱 Spiritual Guidance 🔱
+</h4>
+
+<h2>
+पंडित जी से संपर्क करें 🙏
+</h2>
+
+<p>
+विशेष पूजा, हवन, जाप, अनुष्ठान एवं आध्यात्मिक मार्गदर्शन हेतु
+आप सीधे पंडित जी से संपर्क कर सकते हैं।
+सभी सेवाएँ पूर्ण श्रद्धा एवं विधि-विधान के साथ सम्पन्न की जाती हैं।
+</p>
+
+<div class="info-box">
+
+<div class="info-icon">
+<i class="fa-solid fa-user"></i>
+</div>
+
+<div class="info-text">
+
+<h3>पंडित जी</h3>
+
+<p>
+पंडित श्री महेश गुरुजी
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<div class="info-icon">
+<i class="fa-solid fa-phone"></i>
+</div>
+
+<div class="info-text">
+
+<h3>मोबाइल नंबर</h3>
+
+<p>
++91 9000000000
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<div class="info-icon">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+
+<div class="info-text">
+
+<h3>मंदिर पता</h3>
+
+<p>
+Maa Baglamukhi Temple,<br>
+Ujjain, Madhya Pradesh
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<div class="info-icon">
+<i class="fa-solid fa-clock"></i>
+</div>
+
+<div class="info-text">
+
+<h3>समय</h3>
+
+<p>
+सुबह 6:00 AM – रात 9:00 PM
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-buttons">
+
+<a href="tel:+919000000000" class="contact-btn btn1" onclick="showCallNumber()">
+
+<i class="fa-solid fa-phone"></i>
+Call Now
+
+</a>
+
+<a href="https://wa.me/919000000000" class="contact-btn btn2">
+
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="map-section">
+
+<div class="container">
+
+<div class="map-box reveal-bottom">
+
+<iframe
+src="https://maps.google.com/maps?q=ujjain&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+
+<a href="#" class="call-btn" onclick="showCallNumber()">
+    <i class="fa-solid fa-phone"></i>
+</a>
+
+
+<a href="https://wa.me/919000000000"
+target="_blank"
+class="whatsapp-btn">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<footer class="premium-footer">
+
+<div class="footer-container">
+
+  
+    <div class="footer-box">
+        <h3>Quick Links</h3>
+
+        <ul class="footer-links">
+            <li><a href="home.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="anushthan.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Gallery</a></li>
+            <li><a href="booking.php"><i class="fa-solid fa-angle-right"></i> Booking</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+        </ul>
+    </div>
+
+  
+    <div class="footer-box">
+        <h3>Our Services</h3>
+
+        <ul class="footer-links">
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Baglamukhi Hawan</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Mirchi Hawan</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Shatru Badha Nivaran</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Court Case Vijay</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Laxmi Prapti</a></li>
+            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Tantra Badha Nivaran</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-box">
+        <h3>Contact Info</h3>
+
+        <div class="footer-contact">
+            <p><i class="fa-solid fa-phone"></i> +91 9000000000</p>
+            <p><i class="fa-solid fa-envelope"></i> info@baglamukhi.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Ujjain, Madhya Pradesh</p>
+            <p><i class="fa-solid fa-clock"></i> 6:00 AM - 9:00 PM</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+
+    <div class="footer-box">
+        <h3>Scan & Connect</h3>
+
+        <div class="qr-box">
+            <img src="images/qr.png" alt="QR Code">
+            <p>Scan QR Code</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    <p>
+        © 2026 Design By Allsoft Infotech and Multimedia Pvt. Ltd.
+    </p>
+</div>
+
+</footer>
+
+<script>
+
+
+function toggleMenu(){
+
+let menu=document.getElementById("menu");
+
+menu.classList.toggle("active");
+
+}
+
+
+window.addEventListener("resize",()=>{
+
+let menu=document.getElementById("menu");
+
+if(window.innerWidth>768){
+
+menu.style.display="flex";
+
+}else{
+
+menu.style.display="";
+
+}
+
+});
+
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach((entry)=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{
+threshold:0.2
+});
+
+document.querySelectorAll(
+'.pandit-card,.contact-info,.map-box'
+).forEach((el)=>{
+
+observer.observe(el);
+
+});
+
+function showCallNumber() {
+
+    if(confirm("Call +91 9000000000 ?")){
+
+        window.location.href = "tel:+919000000000";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
